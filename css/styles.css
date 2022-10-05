@@ -24,6 +24,11 @@ body,
   /* font-weight: 400; */
 }
 
+.list {
+  padding: 0;
+  margin: 0;
+}
+
 .item {
   list-style: none;
 }
@@ -50,6 +55,13 @@ body,
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  outline: 1px solid coral; /*________________________________________________________________*/
 }
 
 /* header */
@@ -90,7 +102,20 @@ body,
 /*Footer*/
 
 .footer {
+  padding: 60px 215px 60px 215px;
+  /* padding-top: 60px;
+  padding-left: 215px; */
+
   background: var(--color-f-bg);
+}
+.footer .item:first-child {
+  display: block;
+  padding-top: 20px;
+}
+
+.footer .item:not(:first-child) {
+  display: block;
+  padding-top: 9px;
 }
 
 .footer .c-logo,
