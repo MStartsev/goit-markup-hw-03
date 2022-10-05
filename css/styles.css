@@ -24,6 +24,13 @@ body,
   /* font-weight: 400; */
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -102,12 +109,10 @@ body,
 /*Footer*/
 
 .footer {
-  padding: 60px 215px 60px 215px;
-  /* padding-top: 60px;
-  padding-left: 215px; */
-
+  padding: 60px 0 60px 0;
   background: var(--color-f-bg);
 }
+
 .footer .item:first-child {
   display: block;
   padding-top: 20px;
