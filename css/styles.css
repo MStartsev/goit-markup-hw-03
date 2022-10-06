@@ -21,14 +21,13 @@ body,
 .pointer {
   font-family: var(--font-roboto);
   color: var(--color-text-p);
-  /* font-weight: 400; */
 }
 
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px 0 15px;
+  margin-inline: auto;
+  padding-inline: 15px;
 }
 
 .list {
@@ -67,11 +66,30 @@ body,
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  outline: 1px solid coral; /*________________________________________________________________*/
 }
 
 /* header */
+.head {
+  border-bottom: var(--border-portfolio);
+}
+
+.head .container,
+.head-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-nav {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.head .nav-list,
+.head .address-list {
+  display: inherit;
+  flex-direction: row;
+}
 
 .logo {
   font-family: var(--font-raleway);
@@ -82,8 +100,16 @@ body,
   color: var(--color-blue);
 }
 
+.head .logo {
+  margin-right: 93px;
+}
+
 .c-logo {
   color: var(--color-c-logo);
+}
+
+.head .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-link,
@@ -109,18 +135,18 @@ body,
 /*Footer*/
 
 .footer {
-  padding: 60px 0 60px 0;
+  padding-block: 60px;
   background: var(--color-f-bg);
 }
 
-.footer .item:first-child {
+.footer .logo {
   display: block;
-  padding-top: 20px;
+  margin-bottom: 20px;
 }
 
-.footer .item:not(:first-child) {
+.footer .item:not(:last-child) {
   display: block;
-  padding-top: 9px;
+  margin-bottom: 9px;
 }
 
 .footer .c-logo,
@@ -139,12 +165,17 @@ body,
 
 /* Головна - main */
 .hero {
+  padding-block: 200px;
   background: var(--color-f-bg);
 }
 
 .hero-title {
+  display: block;
+  width: 696px;
+  margin-inline: auto;
   font-weight: 900;
   font-size: 44px;
+  text-align: center;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -152,6 +183,9 @@ body,
 }
 
 .hero-order {
+  display: block;
+  padding: 10px 32px 10px 32px;
+  margin-inline: auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -166,6 +200,23 @@ body,
 .hero-order:hover,
 .hero-order:focus {
   background: var(--color-c-blue);
+}
+
+.features .list,
+.about .list,
+.team .list {
+  display: inline-flex;
+}
+
+.features .item {
+  display: block;
+  width: 270px;
+}
+
+.features .item:not(:last-child),
+.about .item:not(:last-child),
+.team .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features .title {
@@ -187,6 +238,7 @@ body,
 .team-title {
   font-weight: 700;
   font-size: 36px;
+  text-align: center;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
@@ -197,6 +249,7 @@ body,
 
 .team .item {
   width: 270px;
+  background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -206,20 +259,27 @@ body,
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
   letter-spacing: 0.03em;
 }
 
 .team .text {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-text-s);
 }
 
 /*Main - Портфоліо*/
+.filters {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
 
-.portfolio {
-  border-top: var(--border-portfolio);
+.filters .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-btn {
@@ -240,13 +300,39 @@ body,
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.project-item {
+.projects {
+  padding-top: 50px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.border-box {
+  padding: 20px 24px 20px 24px;
+  border-bottom: var(--border-project);
+  border-left: var(--border-project);
+  border-right: var(--border-project);
+}
+
+.projects .item {
+  display: block;
   width: 370px;
   height: 404px;
-  border: var(--border-project);
+}
+
+.projects .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.projects .item:nth-child(n + 4) {
+  margin-top: 30px;
+}
+
+.projects img {
+  display: block;
 }
 
 .project-title {
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -254,6 +340,7 @@ body,
 }
 
 .project-text {
+  margin: 4px 0 0 0;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
