@@ -320,7 +320,7 @@ body,
 }
 
 .border-box {
-  padding: 20px 24px 20px 24px;
+  padding: 20px 24px 19px 24px;
   border-bottom: var(--border-project);
   border-left: var(--border-project);
   border-right: var(--border-project);
