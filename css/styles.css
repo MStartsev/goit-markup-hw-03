@@ -68,6 +68,10 @@ body,
   padding-bottom: 94px;
 }
 
+.img {
+  display: block;
+}
+
 /* header */
 .head {
   border-bottom: var(--border-portfolio);
@@ -172,7 +176,7 @@ body,
 .hero-title {
   display: block;
   width: 696px;
-  margin-inline: auto;
+  margin: 0 auto 30px auto;
   font-weight: 900;
   font-size: 44px;
   text-align: center;
@@ -220,6 +224,7 @@ body,
 }
 
 .features .title {
+  margin: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -228,6 +233,7 @@ body,
 }
 
 .features .text {
+  margin: 10px 0 0 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -236,6 +242,7 @@ body,
 
 .about-title,
 .team-title {
+  margin: 0 0 50px 0;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
@@ -248,6 +255,7 @@ body,
 }
 
 .team .item {
+  padding-bottom: 30px;
   width: 270px;
   background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -256,6 +264,8 @@ body,
 }
 
 .team .title {
+  display: block;
+  margin: 30px 0 10px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -264,6 +274,7 @@ body,
 }
 
 .team .text {
+  margin: 0;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -283,6 +294,7 @@ body,
 }
 
 .filter-btn {
+  padding: 6px 22px 6px 22px;
   border: none;
   border-radius: 4px;
   font-weight: 500;
@@ -325,10 +337,6 @@ body,
 }
 .projects .item:nth-child(n + 4) {
   margin-top: 30px;
-}
-
-.projects img {
-  display: block;
 }
 
 .project-title {
