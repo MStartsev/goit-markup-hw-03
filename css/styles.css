@@ -329,7 +329,6 @@ body,
 .projects .item {
   display: block;
   width: 370px;
-  height: 404px;
 }
 
 .projects .item:not(:nth-child(3n)) {
