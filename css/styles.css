@@ -39,7 +39,7 @@ body,
   list-style: none;
 }
 
-.item .current {
+.current {
   color: var(--color-blue);
 }
 
@@ -70,7 +70,7 @@ body,
 
 .img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* header */
@@ -84,8 +84,13 @@ body,
   align-items: stretch;
 }
 
-.head .nav-list,
-.head .address-list {
+.head-nav {
+  gap: 93px;
+}
+
+.head-flex,
+.head--nav-list,
+.head--address-list {
   gap: 50px;
 }
 
@@ -98,10 +103,9 @@ body,
   color: var(--color-blue);
 }
 
-.head .logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+.head--logo {
+  padding-top: 25px;
+  padding-bottom: 24px;
 }
 
 .c-logo {
@@ -109,7 +113,7 @@ body,
 }
 
 .nav-link,
-.head .address-link {
+.head--address-link {
   display: inherit;
   align-items: center;
   font-weight: 500;
@@ -137,21 +141,21 @@ body,
   background: var(--color-f-bg);
 }
 
-.footer .logo {
+.footer--logo {
   display: block;
   margin-bottom: 20px;
 }
 
-.footer .item:not(:last-child) {
+.footer--item:not(:last-child) {
   display: block;
   margin-bottom: 9px;
 }
 
-.footer .c-logo,
+.footer--c-logo,
 .address-map {
   color: var(--color-white);
 }
-.footer .address-link {
+.footer--address-link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -204,20 +208,20 @@ body,
   padding-top: 0;
 }
 
-.features .list,
-.about .list,
-.team .list {
+.features--list,
+.about--list,
+.team--list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
 }
 
-.features .item {
+.features--item {
   flex-basis: 270px;
 }
 
-.features .title {
+.features--title {
   margin: 0;
   font-weight: 700;
   font-size: 14px;
@@ -226,7 +230,7 @@ body,
   text-transform: uppercase;
 }
 
-.features .text {
+.features--text {
   margin: 10px 0 0 0;
   font-size: 14px;
   line-height: 1.71;
@@ -252,7 +256,7 @@ body,
   padding-block: 30px;
 }
 
-.team .item {
+.team--item {
   width: 270px;
   background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -260,7 +264,7 @@ body,
   border-radius: 0px 0px 4px 4px;
 }
 
-.team .title {
+.team--title {
   display: block;
   margin: 0 0 10px 0;
   font-weight: 500;
@@ -270,7 +274,7 @@ body,
   letter-spacing: 0.03em;
 }
 
-.team .text {
+.team--text {
   margin: 0;
   font-size: 16px;
   line-height: 1.19;
