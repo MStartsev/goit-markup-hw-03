@@ -327,11 +327,6 @@ body,
   border-right: var(--border-project);
 }
 
-.projects .item {
-  display: block;
-  width: 370px;
-}
-
 .project-title {
   margin: 0;
   font-weight: 700;
