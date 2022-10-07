@@ -18,21 +18,25 @@
 
   <header class="head">
     <div class="container">
+      <div class="container-flex">
 
-      <nav class="head-nav">
-        <a href="./" class="link logo" lang="en">Web<span class="c-logo">Studio</span></a>
-        <ul class="list nav-list">
-          <li class="item"><a class="link nav-link current" href="./">Студія</a></li>
-          <li class="item"><a class="link nav-link" href="./portfolio.html">Портфоліо</a></li>
-          <li class="item"><a class="link nav-link" href="#contacts">Контакти</a></li>
+        <nav class="head-nav container-flex">
+          <a href="./" class="link logo" lang="en">Web<span class="c-logo">Studio</span></a>
+          <ul class="list nav-list container-flex">
+            <li class="item container-flex"><a class="link nav-link current" href="./">Студія</a></li>
+            <li class="item container-flex"><a class="link nav-link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="item container-flex"><a class="link nav-link" href="#contacts">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <ul class="list address-list container-flex">
+          <li class="item container-flex"><a class="link address-link"
+              href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="item container-flex"><a class="link address-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
 
-      <ul class="list address-list">
-        <li class="item"><a class="link address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="item"><a class="link address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
-
+      </div>
     </div>
   </header>
 
@@ -78,9 +82,15 @@
 
         <h2 class="about-title">Чим ми займаємося</h2>
         <ul class="list">
-          <li class="item"><img src="./images/main/box01.jpg" alt="Розробка бізнес логіки" width="370"></li>
-          <li class="item"><img src="./images/main/box02.jpg" alt="Розробка мобільних інтерфейсів" width="370"></li>
-          <li class="item"><img src="./images/main/box03.jpg" alt="Семантичні кольори" width="370"></li>
+          <li class="item">
+            <img src="./images/main/box01.jpg" class="img" alt="Розробка бізнес логіки" width="370">
+          </li>
+          <li class="item">
+            <img src="./images/main/box02.jpg" class="img" alt="Розробка мобільних інтерфейсів" width="370">
+          </li>
+          <li class="item">
+            <img src="./images/main/box03.jpg" class="img" alt="Семантичні кольори" width="370">
+          </li>
         </ul>
 
       </div>
@@ -94,26 +104,34 @@
           <li class="item">
             <img src="./images/main/igor.jpg" class="img"
               alt="Фотопортрет усміхненого Ігоря в окулярах та червоній сорочці" width="270" height="260">
-            <h3 class="title">Ігор Дем'яненко</h3>
-            <p class="text" lang="en">Product Designer</p>
+            <div class="team-wrapper">
+              <h3 class="title">Ігор Дем'яненко</h3>
+              <p class="text" lang="en">Product Designer</p>
+            </div>
           </li>
           <li class="item">
             <img src="./images/main/olha.jpg" class="img"
               alt="Фотопортрет усміхненої Ольги в окулярах і чорному піджаку" width="270" height="260">
-            <h3 class=" title">Ольга Рєпіна</h3>
-            <p class="text" lang="en">Frontend Developer</p>
+            <div class="team-wrapper">
+              <h3 class=" title">Ольга Рєпіна</h3>
+              <p class="text" lang="en">Frontend Developer</p>
+            </div>
           </li>
           <li class="item">
             <img src="./images/main/mykola.jpg" class="img" alt="Фотопортрет усміхненого Миколи у білій сорочці"
               width="270" height="260">
-            <h3 class=" title">Микола Тарасов</h3>
-            <p class="text" lang="en">Marketing</p>
+            <div class="team-wrapper">
+              <h3 class=" title">Микола Тарасов</h3>
+              <p class="text" lang="en">Marketing</p>
+            </div>
           </li>
           <li class="item">
             <img src="./images/main/mykhailo.jpg" class="img"
               alt="Фотопортрет усміхненого Михайла в окулярах і чорній футболці" width="270" height="260">
-            <h3 class=" title">Михайло Єрмаков</h3>
-            <p class="text" lang="en">UI Designer</p>
+            <div class="team-wrapper">
+              <h3 class=" title">Михайло Єрмаков</h3>
+              <p class="text" lang="en">UI Designer</p>
+            </div>
           </li>
         </ul>
 
