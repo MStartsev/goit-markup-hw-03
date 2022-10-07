@@ -92,6 +92,7 @@ body,
 .head .nav-list,
 .head .address-list {
   display: inherit;
+  gap: 50px;
   flex-direction: row;
 }
 
@@ -110,10 +111,6 @@ body,
 
 .c-logo {
   color: var(--color-c-logo);
-}
-
-.head .item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .nav-link,
@@ -209,18 +206,14 @@ body,
 .features .list,
 .about .list,
 .team .list {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
 .features .item {
-  display: block;
-  width: 270px;
-}
-
-.features .item:not(:last-child),
-.about .item:not(:last-child),
-.team .item:not(:last-child) {
-  margin-right: 30px;
+  flex-basis: 270px;
 }
 
 .features .title {
@@ -286,11 +279,9 @@ body,
 .filters {
   width: 100%;
   display: inline-flex;
+  flex-wrap: nowrap;
+  gap: 8px;
   justify-content: center;
-}
-
-.filters .item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .filter-btn {
